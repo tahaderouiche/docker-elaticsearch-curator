@@ -3,15 +3,15 @@
 # not a Python "NoneType"
 client:
   hosts:
-    - ${elasticsearch_hostname}
-  port: ${elasticsearch_hostname}
+    - ${ELASTICSEARCH_HOSTNAME}
+  port: ${ELASTICSEARCH_PORT}
   url_prefix:
   use_ssl: False
   certificate:
   client_cert:
   client_key:
   ssl_no_validate: False
-  http_auth: ${elasticsearch_username_password}
+  http_auth: ${ELASTICSEARCH_USERNAME_PASSWORD}
   timeout: 30
   master_only: False
 
