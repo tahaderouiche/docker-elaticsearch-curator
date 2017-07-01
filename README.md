@@ -21,9 +21,9 @@ To deleting the metricbeat-* and logstash-* indexes older than 7 days on a local
 docker run --rm \
 --name elasticsearch-curator \
 -e INDICES_MAX_7_DAYS="^(metricbeat|logstash).*$" \
--e ELASTICSEARCH_HOSTNAME="localhost"
--e ELASTICSEARCH_PORT="9200"
--e ELASTICSEARCH_USERNAME_PASSWORD="elastic:changeme"
+-e ELASTICSEARCH_HOSTNAME="localhost" \
+-e ELASTICSEARCH_PORT="9200" \
+-e ELASTICSEARCH_USERNAME_PASSWORD="elastic:changeme" \
 tahaderouiche/elasticsearch-curator
 ```
 
